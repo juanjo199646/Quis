@@ -4,4 +4,12 @@
     <string name="tx1">UUU  Desginer  at KREATIVE</string>
     <string name="tx2">LOS GAMERS  /  MAKING OF GAME Concept</string>
     <string name="tx3"> Game desin ilustration . IOS , fine ARTS DIGITAL </string>
+    <string name="str_b">IR a otro</string>
+
+
+
+    <string name="app_name">Nuevo</string>
+    <string name="str_nom">nombre</string>
+    <string name="str_ape">apellido</string>
+    <string name="str_btn">ACEPTAR</string>
 </resources>
