@@ -9,102 +9,554 @@
     <ScrollView
         android:layout_width="368dp"
         android:layout_height="495dp"
+        android:layout_margin="10dp"
         android:background="@android:color/white"
         android:padding="10dp"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="8dp">
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="-20dp">
 
-        <RelativeLayout
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-
-                <ImageView
-                    android:id="@+id/imagen1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
-                    android:layout_marginTop="15dp"
-                    android:background="@drawable/icons8_motocross_96" />
-
-                <TextView
-                    android:id="@+id/txt_0"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_toEndOf="@+id/imagen1"
-                    android:layout_toRightOf="@+id/imagen1"
-                    android:text="@string/Mike"
-                    android:textColor="@android:color/white"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txt_1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/imagen1"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_below="@+id/txt_0"
-                    android:layout_toEndOf="@+id/imagen1"
-                    android:layout_toRightOf="@+id/imagen1"
-                    android:text="@string/tx1"
-                    android:textColor="@android:color/black"
-                    android:textSize="12dp" />
-
-
-                <ImageView
-                    android:id="@+id/image2"
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-
                     android:layout_alignParentStart="true"
-                    android:layout_below="@+id/imagen1"
-                    android:background="@drawable/mario" />
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
 
 
-                <TextView
-                    android:id="@+id/txt2"
+                    <ImageView
+                        android:id="@+id/imagen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/icons8_motocross_96" />
+
+                    <TextView
+                        android:id="@+id/txt_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/Mike"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imagen1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/txt_0"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/tx1"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imagen1"
+                        android:background="@drawable/mario" />
+
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/image2"
+                        android:layout_toRightOf="@+id/image2"
+                        android:text="@string/tx2"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="29dp"
+                        android:text="@string/tx3"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:layout_toEndOf="@+id/image2"
-                    android:layout_toRightOf="@+id/image2"
-                    android:text="@string/tx2"
-                    android:textColor="@android:color/black"
-                    android:textSize="12dp" />
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
 
 
-                <TextView
-                    android:id="@+id/txt3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tx3"
-                    android:textColor="@android:color/black"
-                    android:textSize="10dp"
-                    android:layout_alignParentBottom="true"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginBottom="29dp" />
+                    <ImageView
+                        android:id="@+id/imagen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/icons8_motocross_96" />
+
+                    <TextView
+                        android:id="@+id/txt_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/Mike"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imagen1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/txt_0"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/tx1"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/image8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imagen1"
+                        android:background="@drawable/mario" />
+
+
+                    <TextView
+                        android:id="@+id/txt9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tx2"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/image8"
+                        android:layout_toEndOf="@+id/image8"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginStart="16dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="@string/tx3"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
 
 
             </RelativeLayout>
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
-        </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/imagen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/icons8_motocross_96" />
+
+                    <TextView
+                        android:id="@+id/txt_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/Mike"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imagen1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/txt_0"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/tx1"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imagen1"
+                        android:background="@drawable/mario" />
+
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/image2"
+                        android:layout_toRightOf="@+id/image2"
+                        android:text="@string/tx2"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="29dp"
+                        android:text="@string/tx3"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/imagen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/icons8_motocross_96" />
+
+                    <TextView
+                        android:id="@+id/txt_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/Mike"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imagen1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/txt_0"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/tx1"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imagen1"
+                        android:background="@drawable/mario_2" />
+
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/image2"
+                        android:layout_toRightOf="@+id/image2"
+                        android:text="@string/tx2"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="29dp"
+                        android:text="@string/tx3"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/imagen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/icons8_motocross_96" />
+
+                    <TextView
+                        android:id="@+id/txt_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/Mike"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imagen1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/txt_0"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/tx1"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/image2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imagen1"
+                        android:background="@drawable/mario" />
+
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/image2"
+                        android:layout_toRightOf="@+id/image2"
+                        android:text="@string/tx2"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="29dp"
+                        android:text="@string/tx3"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/imagen1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/icons8_motocross_96" />
+
+                    <TextView
+                        android:id="@+id/txt_0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/Mike"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/imagen1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/txt_0"
+                        android:layout_toEndOf="@+id/imagen1"
+                        android:layout_toRightOf="@+id/imagen1"
+                        android:text="@string/tx1"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <ImageView
+                        android:id="@+id/image6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/imagen1"
+                        android:background="@drawable/mario_3" />
+
+
+                    <TextView
+                        android:id="@+id/txt2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/image6"
+                        android:layout_toRightOf="@+id/image6"
+                        android:text="@string/tx2"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="29dp"
+                        android:text="@string/tx3"
+                        android:textColor="@android:color/black"
+                        android:textSize="10dp" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
 
     </ScrollView>
